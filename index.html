@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservia</title>
+    <meta name="keywords" content="reservation, hotel, auberge, gites, activite, vacances">
+    <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/logo/Reservia@3x-reduit.png">
+    <!--Fonts Google'dan aldigim Raleway yazi tipi: regular ve Bold-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- cdnjs'ten aldigim font-awesome css linki, ikon vs gelmesini sagliyor-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Responsive Design iPhone8 için 375px, daha iyi analiz için geçici olarak 600'de-->
+    <link rel="stylesheet" media="(max-width:300px)" href="css/mobile.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html" id="logo"><img src="images/logo/reservia-logo.svg" alt="Logo Reservia"></a>
+            <div class="navbar_link"><a href="#accommodation">Hébergements</a></div>
+            <div class="navbar-link"><a href="#activity">Activités</a></div>
+            <div class="sign-up"><a href="#">S'inscrire</a></div>
+        </nav>
+    </header>
+    <main>
+        <section id="research">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre de ville ou en pleine nature</p>
+
+            <div class="research-form">
+                <form>
+                    <div><i class="fas fa-map-marker-alt"></i></div>
+                    <div><input type="text" placeholder="Marseille, France"></div>
+                    <div><button type="button" class="research-btn">Rechercher</button></div>
+                    <div><button type="button" class="research-lens"><i class="fas fa-search"></i></button></div>
+                </form>
+            </div>
+
+            <div class="filter">
+                <h3>Filtres</h3>
+                <ul class="filter-list">
+                    <li class=""><i class="fas fa-money-bill-wave"></i>Économique</li>
+                    <li class=""><i class="fas fa-child"></i>Familial</li>
+                    <li class=""><i class="fas fa-heart"></i>Romantique</li>
+                    <li class=""><i class="fas fa-dog"></i>Animaux autorisés</li>
+                </ul>
+            </div>
+
+            <div class="info">
+                <i class="fas fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+
+        <section id="accommodation">
+            <article class="result-accommodation">
+                <div><h3>Hébergements à Marseille</h3></div>
+                <div class="result-list-accommodation">
+                    <button>Hôtel ici</button>
+                    <button>Hôtel ici</button>
+                    <button>Hôtel ici</button>
+                    <button>Hôtel ici</button>
+                    <button>Hôtel ici</button>
+                    <button>Hôtel ici</button>
+                </div>
+                <div><button type="button" class="afficher-plus"><h5>Afficher plus</h5></button></div>
+                <div class="show-more"><a href=""><h5>Show more</h5></a></div>
+            </article>
+            <aside class="result-popular">
+                <div class="result-popular-titre">
+                    <h3>Les plus populaires</h3>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="result-list-popular">
+                    <button>Hôtel ici</button>
+                    <button>Hôtel ici</button>
+                    <button>Hôtel ici</button>
+                </div>
+            </aside>
+        </section>
+        <section id="activity">
+            <article>
+                <div><h3>Activités à Marseille</h3></div>
+                <div class="result-list-activity">
+                    <button>Activité ici</button>
+                    <button>Activité ici</button>
+                    <button>Activité ici</button>
+                    <button>Activité ici</button>
+                    <button>Activité ici</button>
+                    <button>Activité ici</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footerList">
+            <ul>
+                <li class="footer-title">À propos</li>
+                <li><a href="">Fonctionnement du site</a></li>
+                <li><a href="">Conditions générales de vente</a></li>
+                <li><a href="">Données et confidentialité</a></li>
+            </ul>
+            <ul>
+                <li class="footer-title">Nos hébergements</li>
+                <li><a href="">Charte qualité</a></li>
+                <li><a href="">Soumettre votre hôtel</a></li>
+            </ul>
+            <ul>
+                <li class="footer-title">Assistance</li>
+                <li><a href="">Centre d’aide</a></li>
+                <li><a href="">Nous contacter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

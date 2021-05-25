@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+
+/* MAIN */
+/* section id="research" */
+form {
+    display: flex;
+    align-items: center;
+}
+
+.research-lens {
+    display: none;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+
+.filter ul {
+    display: flex;
+    align-items: center;
+}
+
+.filter ul li {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+
+#accommodation {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.result-accommodation{
+    width: 65%;
+    background-color: #F2F2F2;
+}
+
+.result-popular{
+    width: 30%;
+    background-color: #F2F2F2;
+}
+
+.afficher-plus {
+    border: none;
+    cursor: pointer;
+}
+
+.show-more{
+    border: orangered;
+    border-style: solid;
+    width: 30%;
+    padding: 0rem;
+}
+
+.result-popular {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-popular-titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+
+
+footer {
+    background-color: #F2F2F2;
+}
+
+.footerList {
+    display: flex;
+    padding: 2rem 0 2rem 1rem;
+}
+
+.footerList ul {
+    width: 33%;
+}
+
+.footerList ul li {
+    list-style-type: none;
+}
+
+.footer-title {
+    font-weight: bold;
+}
