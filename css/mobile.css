@@ -11,6 +11,8 @@
 
 .research-lens {
     display: flex;
+    color: white;
+    background-color: #0065FC;
 }
 
 /* .filter{

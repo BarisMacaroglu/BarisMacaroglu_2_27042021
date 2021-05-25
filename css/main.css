@@ -8,20 +8,29 @@ a {
     color: black;
 }
 
+header + main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 header nav {
     width: 100%;
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    padding: 1rem;
 }
 
 
-/* MAIN */
-/* section id="research" */
+
 form {
     display: flex;
     align-items: center;
+}
+
+.research-btn {
+    color: white;
+    background-color: #0065FC;
 }
 
 .research-lens {
@@ -44,9 +53,19 @@ form {
     align-items: center;
 }
 
+.blue {
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
 .info {
     display: flex;
     align-items: center;
+}
+
+img {
+    width: 100px;
+    padding: 0.5rem;
 }
 
 
@@ -56,14 +75,31 @@ form {
     
 }
 
+#accommodation a{
+    margin: 1rem;
+}
+
 .result-accommodation{
     width: 65%;
     background-color: #F2F2F2;
+    padding: 1rem;
+}
+
+.result-list-accommodation {
+    display: flex;
 }
 
 .result-popular{
-    width: 30%;
+    width: 25%;
     background-color: #F2F2F2;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-list-popular {
+    display: flex;
+    flex-direction: column;
 }
 
 .afficher-plus {
@@ -78,11 +114,6 @@ form {
     padding: 0rem;
 }
 
-.result-popular {
-    justify-content: space-between;
-    align-items: center;
-}
-
 .result-popular-titre {
     display: flex;
     justify-content: space-between;
@@ -90,9 +121,18 @@ form {
     align-content: space-between;
 }
 
+.result-list-activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 
 footer {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 2rem;
     background-color: #F2F2F2;
 }
 
