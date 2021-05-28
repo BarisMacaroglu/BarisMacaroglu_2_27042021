@@ -1,5 +1,6 @@
 * {
     padding: 0;
+    /* margin: 0; */
     font-family: 'Raleway', sans-serif;
 }
 
@@ -8,17 +9,51 @@ a {
     color: black;
 }
 
+#logo {
+    float: left;
+    padding-top: 20px;
+}
+
 header + main {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-header nav {
+header {
+    display: inline-block;
     width: 100%;
+}
+
+header nav {
+    /* width: 100%; */
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    /* padding: 1rem; */
+    float: right;
+    width: 30%;
+}
+
+.navbar-link {
+    padding-top: 40px;
+}
+
+.navbar-link:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 40px;
+}
+
+.selected {
+    border-top: 2px solid #0065FC;
+    padding-top: 40px;
+    color: #0065FC;
+}
+
+#navbar .sign-up {
+    color: #0065FC;
+    font-weight: bold;
+    padding-top: 40px;
 }
 
 
@@ -28,9 +63,27 @@ form {
     align-items: center;
 }
 
+.marker {
+    background-color: #F2F2F2;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.text-hold{
+    padding: 1rem;
+    border: 1px solid #F2F2F2;
+    font-weight: bold;
+}
+
 .research-btn {
     color: white;
     background-color: #0065FC;
+    padding: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: none; /*Sinon, research-btn ne colle pas vers text-hold*/
+    font-weight: bold;
 }
 
 .research-lens {
@@ -51,12 +104,29 @@ form {
 .filter ul li {
     display: flex;
     align-items: center;
+    border: 1px solid gray;
+    border-radius: 180rem;
+    border-left: none;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.filter ul li i {
+    padding: 1rem;
+    background-color: #DEEBFF;
+    border-radius: 180rem;
+    border: none;
+}
+
+.fa-star {
+    opacity: 0.3;
 }
 
 .blue {
     color: #0065FC;
-    background-color: #DEEBFF;
+    opacity: 1;
 }
+
 
 .info {
     display: flex;
