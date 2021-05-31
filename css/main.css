@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    /* margin: 0; */
+    margin: 0;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -15,13 +15,16 @@ a {
 }
 
 header + main {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 header {
     display: inline-block;
     width: 100%;
+    flex-wrap: wrap;
+    /* margin-left: 3rem;
+    margin-right: 3rem; */
 }
 
 header nav {
@@ -32,6 +35,7 @@ header nav {
     /* padding: 1rem; */
     float: right;
     width: 30%;
+    flex-wrap: wrap;
 }
 
 .navbar-link {
@@ -84,6 +88,11 @@ form {
     border-bottom-right-radius: 1rem;
     border: none; /*Sinon, research-btn ne colle pas vers text-hold*/
     font-weight: bold;
+    cursor: pointer;
+}
+
+.research-btn:active {
+    transform: translateY(3px);
 }
 
 .research-lens {
@@ -92,31 +101,52 @@ form {
 
 .filter {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 
 .filter ul {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    
 }
 
 .filter ul li {
     display: flex;
     align-items: center;
-    border: 1px solid gray;
+    border: 2px solid #F2F2F2;
     border-radius: 180rem;
     border-left: none;
     margin: 1rem;
     font-weight: bold;
+    letter-spacing: 0.7px;
+    padding-right: 2rem;
+}
+
+.filter ul li:hover {
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+.filter ul li:active {
+    transform: translateY(3px);
 }
 
 .filter ul li i {
+    display: flex;
     padding: 1rem;
     background-color: #DEEBFF;
     border-radius: 180rem;
     border: none;
+    justify-content: space-between;
+    margin-right: 1rem;
 }
+
+
+
+
+
 
 .fa-star {
     opacity: 0.3;
@@ -133,8 +163,16 @@ form {
     align-items: center;
 }
 
+.info i {
+    padding: 0.3rem;
+    margin-right: 1rem;
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+}
+
 img {
     width: 100px;
+    /* height: 100px; */
     padding: 0.5rem;
 }
 
@@ -157,6 +195,10 @@ img {
 
 .result-list-accommodation {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    /* flex-grow: 1; */
 }
 
 .result-popular{
@@ -166,6 +208,18 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+
+.result-popular-titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+/* .result-popular-titre i {
+    padding: 0;
+    margin: 0;
+} */
 
 .result-list-popular {
     display: flex;
@@ -184,17 +238,16 @@ img {
     padding: 0rem;
 }
 
-.result-popular-titre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: space-between;
+#activity {
+    margin-top: 2rem;
 }
+
+
 
 .result-list-activity {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
