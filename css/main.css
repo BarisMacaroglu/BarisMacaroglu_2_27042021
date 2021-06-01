@@ -65,6 +65,7 @@ header nav {
 form {
     display: flex;
     align-items: center;
+    margin: 1.5rem 0 1.5rem 0;
 }
 
 .marker {
@@ -109,7 +110,7 @@ form {
 .filter ul {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 .filter ul li {
@@ -120,8 +121,8 @@ form {
     border-left: none;
     margin: 1rem;
     font-weight: bold;
-    letter-spacing: 0.7px;
-    padding-right: 2rem;
+    letter-spacing: 0.4px;
+    padding-right: 1rem;
 }
 
 .filter ul li:hover {
@@ -161,6 +162,7 @@ form {
 .info {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .info i {
@@ -170,9 +172,26 @@ form {
     border-radius: 100%;
 }
 
+/* HEBERGEMENT */
+
+.thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
 img {
     width: 100px;
-    /* height: 100px; */
+    height: 50px;
     padding: 0.5rem;
 }
 
@@ -183,13 +202,18 @@ img {
     
 }
 
-#accommodation a{
+/* #accommodation a{
     margin: 1rem;
-}
+} */
 
 .result-accommodation{
     width: 65%;
     background-color: #F2F2F2;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.hebergement-titre {
     padding: 1rem;
 }
 
@@ -204,6 +228,7 @@ img {
 .result-popular{
     width: 25%;
     background-color: #F2F2F2;
+    border-radius: 2rem;
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
@@ -214,6 +239,8 @@ img {
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
+    padding: 1rem;
+    /* margin: 1rem;  Bu sayede les plus populaire yazisi içerde kaldi harika oldu */
 }
 
 /* .result-popular-titre i {
@@ -229,6 +256,7 @@ img {
 .afficher-plus {
     border: none;
     cursor: pointer;
+    padding-left: 1rem;
 }
 
 .show-more{
@@ -266,12 +294,16 @@ footer {
 
 .footerList ul {
     width: 33%;
+    /* padding: 1rem; */   /*Bunu koyunca altta slidebar geldi*/
+    padding-bottom: 1rem;
 }
 
 .footerList ul li {
     list-style-type: none;
+    padding: 0.5rem;
 }
 
 .footer-title {
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }

@@ -34,45 +34,23 @@ header + main {
     border-right: 1rem;
 }
 
-/* .filter{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.filter-list{
-    display: flex;
-    flex-direction: column;
-    justify-items: left;
-    justify-content: left;
-    align-items: left;
-}
-
-.filter-list li {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    justify-items: left;
-
-} */
-
 .filter {
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    padding-right: 0;
+    margin: 0;
 }
 
 
 .filter ul {
     display: flex;
+    padding-right: 0;
     align-items: flex-start;
-    flex-direction: column;
 }
 
-/* .filter ul li {
-    display: flex;
-    align-items: flex-start;
-} */
+.filter ul li {
+    margin-left: 0;
+}
 
 
 
@@ -89,6 +67,7 @@ header + main {
     width: 100%;
     padding: 0;
     /* padding: 1rem; */
+    border-radius: 0;
 }
 
 /* .result-popular-titre i {
@@ -97,8 +76,21 @@ header + main {
 } */
 
 .result-accommodation {
-    /* width: 100%; */
-    margin-top: 1rem;
+    /* width: 90%; */
+    width: 100%;
+    /* margin-top: 1rem; */
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-self: center;
+    justify-items: center;
+    padding: 0;
+    /* margin: 0; */
+}
+
+.afficher-plus {
     background-color: white;
 }
 
@@ -113,6 +105,12 @@ header + main {
 }
 
 #activity {
+    /* padding: 1rem;
+    margin: 1rem; */
+    padding: 0;
+}
+
+.activity-titre {
     padding: 1rem;
 }
 
