@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    /* max-width: 1440px; */
+    max-width: 1440px;
 }
 
 h1{ font-size: 22px; font-weight: bold; margin-bottom: 10px; }
@@ -27,10 +27,10 @@ main {
 img{ object-fit: cover; }
 
 @media screen and (max-width: 950px) {
-    h1{ font-size: 20px; font-weight: bold; margin-bottom: 14px; }
+    h1{ font-size: 22px; font-weight: bold; margin-bottom: 0px; }
     h2{ font-size: 20px; font-weight: bold; }
     h4{ font-size: 14px; font-weight: bold; margin-bottom: 2px; }
-    p{  font-size: 14px; font-weight: normal; }
+    p{  font-size: 15px; font-weight: normal; }
     a{  font-size: 15px; }
 }
 
@@ -46,7 +46,7 @@ img{ object-fit: cover; }
     align-content: flex-end;
     height: 85px;
     /* margin: auto; */
-    margin-bottom: 50px;
+    margin-bottom: 32px;
 }
 
 .header-logo{
@@ -120,7 +120,7 @@ img{ object-fit: cover; }
 
 
 #research h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 13px;
 }
 
 form {
@@ -190,7 +190,7 @@ form {
 .filter ul li {
     display: flex;
     align-items: center;
-    border: 2px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     border-radius: 180rem;
     border-left: none;
     margin: 1rem;
