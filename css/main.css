@@ -18,7 +18,7 @@ a:hover{ color: #0065FC; }
 a:focus { color: #000000; }
 
 
-header + main {
+main {
     margin-left: 3rem;
     margin-right: 3rem;
 }
@@ -62,7 +62,7 @@ img{ object-fit: cover; }
 .header-navItem:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 39px;
+    padding-top: 34px;
 }
 
 .header-sign-up{
@@ -83,8 +83,6 @@ img{ object-fit: cover; }
     }
     
     .header-logo{
-        margin-right: auto;
-        padding-left: 18px;
         margin-left: 0;
     }
     
@@ -123,12 +121,10 @@ img{ object-fit: cover; }
     margin-bottom: 1rem;
 }
 
-
-
 form {
     display: flex;
     align-items: center;
-    margin: 1.5rem 0 1.5rem 0;
+    margin: 2rem 0 2rem 0;
 }
 
 .marker {
@@ -136,12 +132,18 @@ form {
     padding: 1rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    width: 1.5rem;
+    text-align: center;
+    border: 1px solid #F2F2F2;
+    border-right: none;
 }
 
 .text-hold{
     padding: 1rem;
     border: 1px solid #F2F2F2;
     font-weight: bold;
+    font-size: 16px;
+    width: 12rem;
 }
 
 .research-btn {
@@ -150,9 +152,11 @@ form {
     padding: 1rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    border: none; /*Sinon, research-btn ne colle pas vers text-hold*/
+    border: none;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    width: 9rem;
 }
 
 .research-btn:active {
@@ -163,10 +167,15 @@ form {
     display: none;
 }
 
+
 .filter {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.filter h3 {
+    margin-right: 2.5rem;
 }
 
 
@@ -184,11 +193,15 @@ form {
     border-left: none;
     margin: 1rem;
     font-weight: bold;
-    letter-spacing: 0.4px;
-    padding-right: 2rem;
+    letter-spacing: 0.3px;
+    padding-right: 1.6rem;
+
+    margin-left: 0;
+    margin-right: 2rem;
 }
 
 .filter ul li:hover {
+    /* border: 1px solid #DEEBFF; */
     color: #0065FC;
     background-color: #DEEBFF;
     cursor: pointer;
@@ -229,7 +242,8 @@ form {
 .info {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    margin: 1rem 0 2rem 0;
 }
 
 .info i {
@@ -268,11 +282,11 @@ img {
 }
 
 .img-pop {
-    width: 200px;
-    height: 100px;
+    width: 110px;
+    /* height: 100px; */
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    margin: 0.3rem;
+    margin: 0.2rem;
     float: left;
     /* object-fit: cover; */
 }
@@ -281,6 +295,8 @@ img {
 #accommodation {
     display: flex;
     justify-content: space-between;
+
+    flex-wrap: wrap;
     
 }
 
@@ -290,7 +306,7 @@ img {
     justify-content: space-between;
     width: 62%;
     background-color: #F2F2F2;
-    border-radius: 2rem;
+    border-radius: 1.2rem;
     padding: 1rem;    
 }
 
@@ -304,7 +320,13 @@ img {
     justify-content: space-between;
     align-content: space-between;
     flex-grow: 1;
+
+
 }
+
+/* .result-list-accommodation a {
+    margin: 1rem 2rem 1rem 2rem;
+} */
 
 .thumbnail {
     display: flex;
@@ -337,7 +359,7 @@ img {
     flex-direction: column; */
     width: 30%;
     background-color: #F2F2F2;
-    border-radius: 2rem;
+    border-radius: 1.2rem;
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
@@ -352,6 +374,10 @@ img {
     /* margin: 1rem;  Bu sayede les plus populaire yazisi içerde kaldi harika oldu */
 }
 
+.result-popular-titre i {
+    font-size: 1.2rem;
+}
+
 .result-list-popular {
     display: flex;
     flex-direction: column;
@@ -364,6 +390,10 @@ img {
     float: left;
 
     flex-wrap: nowrap;
+
+    height: 130px;
+
+    /* margin: 1rem 2rem 1rem 2rem; */
 }
 
 .res-pop {
@@ -375,8 +405,21 @@ img {
     flex-direction: column;
     justify-content: space-between;
     /* float: right; */
-    margin: 0.3rem;
+
+    margin: 0.75rem 3.5rem 0.75rem 1rem;
 }
+
+h4 {
+    font-size: 18px;
+}
+
+#accommodation .result-popular h4 {
+    margin-bottom: 6px;
+}
+
+/* .descr-pop {
+    margin-top: 0.5rem;
+} */
 
 .description-heb {
     display: flex;
@@ -398,6 +441,10 @@ img {
     margin: 1rem 0 1rem 0;
 }
 
+.afficher-plus h4 {
+    font-size: 16px;
+}
+
 
 
 @media screen and (max-width: 1200px){
@@ -405,36 +452,56 @@ img {
         display: flex;
         flex-direction: column-reverse;
         margin: 0;
-        /* padding: 1rem; */
         width: 100%;
     }
     .result-list-popular{
         display: flex;
         flex-direction: column;
+        padding: 1rem;
     }
     
     .result-list-accommodation{
         display: flex;
-        /* flex-direction: column; */
+        padding: 1rem;
     }
     .result-popular {
         width: 100%;
         padding: 0;
-        /* padding: 1rem; */
-        border-radius: 0;
     }
+
+    .result-popular-titre{
+        padding: 2rem 2rem 0 2rem;
+    }
+
+
     .result-accommodation {
+        display: flex;
         width: 100%;
-        /* margin-top: 1rem; */
-        background-color: white;
+        margin-top: 1rem;
+        background-color: #F2F2F2;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
+
         /* align-self: center; */
         /* align-content: center; */
         /* justify-self: center; */
         /* justify-items: center; */
+
         padding: 0;
         /* margin: 0; */
+    }
+
+    .hebergement-titre {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .afficher-plus {
+        margin: 0 0 2rem 0;
+    }
+
+    .afficher-plus h4{
+        font-size: 15px;
+        padding-left: 1rem;
     }
 }
 
@@ -514,7 +581,7 @@ footer {
 
 .footerList {
     display: flex;
-    padding: 2rem 0 2rem 1rem;
+    padding: 2rem 0 2rem 2.5rem;
 }
 
 .footerList ul {

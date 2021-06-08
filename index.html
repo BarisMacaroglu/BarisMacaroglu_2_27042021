@@ -15,7 +15,7 @@
     <!-- cdnjs'ten aldigim font-awesome css linki, ikon vs gelmesini sagliyor-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Responsive Design iPhone8 için 375px, daha iyi analiz için geçici olarak 600'de-->
-    <link rel="stylesheet" media="(max-width:700px)" href="css/mobile.css">
+    <link rel="stylesheet" media="(max-width:800px)" href="css/mobile.css">
 </head>
 <body>
     <!-- <header>
@@ -27,7 +27,8 @@
         <div class="sign-up"><a href="#" class="sign-up">S'inscrire</a></div>
     </header> -->
     <header class="header">
-        <img class="header-logo" src="images/logo/reservia-logo.svg" alt="logo Reservia">
+        <!-- <img class="header-logo" src="images/logo/reservia-logo.svg" alt="logo Reservia"> -->
+        <a href="index.html" class="header-logo"><img src="images/logo/reservia-logo.svg" alt="logo Reservia"></a>
         <nav class="header-nav">
             <a class="header-navItem" href="#hebergement">Hébergements</a>
             <a class="header-navItem" href="#activites">Activités</a>
@@ -47,6 +48,13 @@
                     <div><button type="button" class="research-lens"><i class="fas fa-search"></i></button></div>
                 </form>
             </div>
+
+            <!-- <form class="research-form2">
+                <div class="marker2"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="text-hold2"><input type="text" value="Marseille, France"></div>
+                <div class="research-btn2"><button type="button">Rechercher</button></div>
+                <div class="research-lens2"><button type="button"><i class="fas fa-search"></i></button></div>
+            </form> -->
 
             <div class="filter">
                 <h3>Filtres</h3>
@@ -176,7 +184,7 @@
                     <a href="" class="thumbnail res-pop">
                         <img src="images/hebergements/3_medium/hotel-soleil-matin.jpg" class="img-pop" alt="Hôtel Le soleil du matin">
                         <span class="description-pop">
-                            <span>
+                            <span class="descr-pop">
                                 <h4>Hôtel Le soleil du matin</h4> 
                                 <p>Nuit à partir de 128<b>€</b></p> 
                             </span>
@@ -192,7 +200,7 @@
                     <a href="" class="thumbnail res-pop">
                         <img src="images/hebergements/3_medium/chambre-coeur-eau.jpg" class="img-pop" alt="Au coeur de l'eau Chambres d'hôtes">
                         <span class="description-pop">
-                            <span>
+                            <span class="descr-pop">
                                 <h4>Au coeur de l'eau Chambres d'hôtes</h4> 
                                 <p>Nuit à partir de 71<b>€</b></p> 
                             </span>

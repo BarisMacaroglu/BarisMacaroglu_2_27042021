@@ -3,53 +3,67 @@ header + main {
     margin-right: 0;
 }
 
-#logo {
-    margin-left: 0.5rem;
-}
-
-#navbar{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+.header-logo {
+    margin-left: 1rem;
 }
 
 #research {
     padding: 1rem;
+    padding-top: 0;
+    margin-top: 0;
 }
 
-/* form{
-    border: 1px solid blue;
-    border-radius: 1rem;
-    justify-content: space-between;
-} */
+@media screen and (max-width: 480px) {
 
+    form{
+        border: 1px solid #F2F2F2;
+        border-radius: 1rem;
+        justify-content: space-between;
+        border-right: none;
+    }
 
-.research-btn {
-    display: none;
+    .marker {
+        border: none;
+    }
+
+    .text-hold {
+        border: none;
+        margin-right: -1rem;
+        font-size: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .research-btn {
+        display: none;
+    }
+    
+    .research-lens {
+        display: flex;
+        color: white;
+        background-color: #0065FC;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: none; 
+        cursor: pointer;
+    }
+    
+    .research-lens i {
+        font-size: 1.2rem;
+    }
+
+    .research-lens:active {
+        transform: translateY(3px);
+    }
+    
 }
 
-.research-lens {
-    display: flex;
-    color: white;
-    background-color: #0065FC;
-    padding: 17px;
-    border-radius: 1rem;
-    border: none; /*Sinon, research-btn ne colle pas vers text-hold*/
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.text-hold {
-    border: 1px solid #F2F2F2;
-    /* border-right: 1rem; */
-    margin-right: -1rem;
-}
 
 .filter {
     display: flex;
     align-items: flex-start;
     padding: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -61,17 +75,15 @@ header + main {
     align-items: flex-start;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .filter ul li {
-    /* margin-left: 0; */
-    padding-right: 0;
     padding-left: 0;
     margin: 0;
     padding: 0;
     padding-right: 1rem;
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
     margin-bottom: 0.3rem;
     margin-top: 0.9rem;
 }
@@ -84,6 +96,13 @@ header + main {
     margin-right: 0.8rem;
 }
 
+.info {
+    margin-bottom: 1rem;
+}
+
+.info p {
+    font-size: 1rem;
+}
 
 
 #accommodation {
@@ -94,12 +113,21 @@ header + main {
     width: 100%;
 }
 
+.img-heberge {
+    width: 100%;
+}
+
 
 .result-popular {
     width: 100%;
     padding: 0;
     /* padding: 1rem; */
     border-radius: 0;
+    padding-top: 1rem;
+}
+
+.result-popular-titre{
+    padding: 1rem;
 }
 
 .result-accommodation {
@@ -109,31 +137,48 @@ header + main {
     padding: 0;
     /* padding: 1rem; */
     border-radius: 0;
+    background-color: white;
 }
 
 .result-accommodation a{
     width: 100%;
 }
 
+.hebergement-titre {
+    padding: 1rem 1rem 0 1rem;
+}
+
 
 
 .afficher-plus {
     background-color: white;
+    margin: 0;
+    padding: 1rem 1rem 1rem 0;
 }
 
 .result-list-popular{
     display: flex;
     flex-direction: column;
+    padding: 0 0 1.2rem 0;
+}
+
+.result-list-accommodation{
+    padding: 0;
+}
+
+.description-pop {
+    margin: 0.6rem 0.4rem 0.7rem 0.8rem;
 }
 
 
 
 #activity {
     padding: 1rem;
+    margin-top: 0.5rem;
 }
 
 .activity-titre {
-    padding: 1rem;
+    padding: 0;
 }
 
 .result-list-activity{
@@ -155,10 +200,14 @@ header + main {
 }
 
 
+footer{
+    margin-top: 1.5rem;
+}
 
 .footerList {
     display: flex;
     flex-direction: column;
+    padding: 2rem 0 2rem 1rem;
 }
 
 .footerList ul {
