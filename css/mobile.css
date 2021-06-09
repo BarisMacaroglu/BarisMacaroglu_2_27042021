@@ -84,9 +84,10 @@ header + main {
     margin: 0;
     padding: 0;
     padding-right: 1rem;
-    margin-right: 0.8rem;
+    margin-right: 0.3rem;
     margin-bottom: 0;
     margin-top: 0.9rem;
+    margin-left: 0;
 
     height: 42px;
 }
@@ -107,7 +108,7 @@ header + main {
 }
 
 .info i {
-    width: 31px;
+    width: 27px;
     margin-right: 0.7rem;
     font-size: 13px;
 }
