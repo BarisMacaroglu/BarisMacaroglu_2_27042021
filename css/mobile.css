@@ -86,6 +86,8 @@ header + main {
     margin-right: 0.8rem;
     margin-bottom: 0;
     margin-top: 0.9rem;
+
+    height: 42px;
 }
 
 .filter ul li i {
@@ -100,6 +102,13 @@ header + main {
 
 .info {
     margin-bottom: 1rem;
+    align-items: baseline;
+}
+
+.info i {
+    width: 31px;
+    margin-right: 0.7rem;
+    font-size: 13px;
 }
 
 .info p {

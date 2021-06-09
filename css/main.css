@@ -190,9 +190,18 @@ form {
 .filter ul li {
     display: flex;
     align-items: center;
-    border: 3px solid #F2F2F2;
+    border: 2.3px solid #D1D1D1;
     border-radius: 180rem;
     border-left: none;
+    height: 47px;
+
+    /* border-width: 2px 2px 2px 0;
+    border-style: solid;
+    border-color: #D1D1D1;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 0; */
+
     margin: 1rem;
     font-weight: bold;
     letter-spacing: 0.3px;
@@ -203,7 +212,8 @@ form {
 }
 
 .filter ul li:hover {
-    /* border: 1px solid #DEEBFF; */
+    border: 2.3px solid #DEEBFF;
+    border-left: none;
     color: #0065FC;
     background-color: #DEEBFF;
     cursor: pointer;
@@ -254,7 +264,7 @@ form {
     width: 24px;
     align-items: center;
     justify-content: center;
-    border: 1px solid #F2F2F2;
+    border: 1.5px solid #D1D1D1;
     border-radius: 100%;
     margin-right: 1rem;
     font-size: 14px;
