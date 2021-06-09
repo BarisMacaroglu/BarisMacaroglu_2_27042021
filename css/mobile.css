@@ -116,7 +116,7 @@ header + main {
 }
 
 .img-heberge {
-    width: 100%;
+    width: 98.2%;
 }
 
 
@@ -148,7 +148,7 @@ header + main {
 }
 
 .hebergement-titre {
-    padding: 1rem 1rem 0 1rem;
+    padding: 1.3rem 1rem 0.3rem 1rem;
 }
 
 
@@ -156,7 +156,10 @@ header + main {
 .afficher-plus {
     background-color: white;
     margin: 0;
-    padding: 1rem 1rem 1rem 0;
+    /* padding: 1rem 1rem 1rem 0; */
+    padding: 0;
+    margin: 2rem 0 1.9rem 0;
+    font-size: 40px;
 }
 
 .result-list-popular{
@@ -167,6 +170,11 @@ header + main {
 
 .result-list-accommodation{
     padding: 0;
+}
+
+.result-list-accommodation a {
+    margin-bottom: 0px;
+    margin-top: 13px;
 }
 
 .description-pop {
@@ -205,21 +213,40 @@ header + main {
 }
 
 .article-1, .article-2, .article-3, .article-4, .article-5, .article-6 {
-    height: 170px;
+    height: 185px;
+    margin-bottom: 26px;
 }
 
 
 footer{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .footerList {
     display: flex;
     flex-direction: column;
-    padding: 2rem 0 2rem 1rem;
+    padding: 2rem 0 0 1rem;
+    margin-left: 0.3rem;
 }
 
 .footerList ul {
     width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.footerList ul li {
+    list-style-type: none;
+    padding: 0.3rem;
+    margin-bottom: 0.1rem;
+}
+
+#footer-title {
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    font-size: 18px;
+}
+
+.footerList ul li a {
+    font-size: 16px;
 }
 

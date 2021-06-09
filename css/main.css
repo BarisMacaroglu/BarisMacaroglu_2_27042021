@@ -280,8 +280,8 @@ img {
 
 .img-heberge {
     width: 240px;
-    height: 100px;
-    margin: 0.3rem;
+    height: 115px;
+    margin: 3px;
     /* padding: 5rem; */
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -348,7 +348,7 @@ img {
     margin: 1rem;
     border: 2px solid white;
     background-color: white;
-    border-radius: 1rem;
+    border-radius: 19px;
     font-size: 12px;
 
     box-shadow: 1px 5px 10px rgba(0,0,0,0.14);
@@ -439,6 +439,10 @@ img {
     font-size: 7px;
 }
 
+.rating-heb {
+    font-size: 12px;
+}
+
 h4 {
     font-size: 18px;
 }
@@ -461,8 +465,33 @@ h4 {
 .description-title {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
+
+
+
+.description-heb h4 {
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.description-heb p {
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.description-heb i {
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+.rating-heb {
+    font-size: 1px;
+    /* stars stick to each other */
+}
+
+
+
 
 .afficher-plus {
     border: none;
@@ -530,7 +559,7 @@ h4 {
     }
 
     .afficher-plus h4{
-        font-size: 15px;
+        font-size: 18px;
         padding-left: 1rem;
     }
 }
@@ -550,7 +579,7 @@ h4 {
     justify-content: space-between;
     align-content: space-between;
     height: 440px;
-    margin-top: 20px;
+    margin-top: 25px;
     
 }
 
@@ -588,7 +617,7 @@ h4 {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     margin: 0;
-    height: calc(100% - 55px);
+    height: calc(100% - 54px);
 }
 
 .description-act {
@@ -596,6 +625,10 @@ h4 {
     align-items: center;
     height: 50px;
     margin-left: 20px;
+}
+
+.description-act h4 {
+    font-size: 16px;
 }
 
 
