@@ -130,6 +130,7 @@ header + main {
 
 .result-popular-titre{
     padding: 1rem;
+    margin-top: 5px;
 }
 
 .result-accommodation {
@@ -161,7 +162,7 @@ header + main {
 .result-list-popular{
     display: flex;
     flex-direction: column;
-    padding: 0 0 1.2rem 0;
+    padding: 0 0 30px 0;
 }
 
 .result-list-accommodation{
@@ -169,7 +170,13 @@ header + main {
 }
 
 .description-pop {
-    margin: 0.6rem 0.4rem 0.7rem 0.8rem;
+    /* margin: 0.6rem 0.4rem 0.7rem 0.8rem; */
+    margin: 15px 10px 10px 16px;
+
+}
+
+.description-pop p {
+    margin-top: 8px;
 }
 
 
