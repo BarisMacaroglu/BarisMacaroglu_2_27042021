@@ -10,9 +10,9 @@
 } */
 
 body {
-    max-width: 1440px;
+    max-width: 1460px;
     width: 100%;
-    margin: auto;
+    margin: auto;  /*Comme ça, affichage sur ultra-large écran OK*/
     box-sizing: border-box;
 }
 
@@ -55,33 +55,36 @@ img{ object-fit: cover; }
     flex-flow: row wrap;
     justify-content: flex-end;
     align-content: flex-end;
-    height: 85px;
+    /* height: 93px; */
     /* margin: auto; */
-    margin-bottom: 32px;
+    margin-bottom: 33px;
+    margin-top: 48px;
 }
 
 .header-logo{
     margin-right: auto;
     margin-left: 50px;
+    margin-top: -4px;
 }
 
 .header-navItem{
-    padding: 0 40px;
+    padding: 0 23px;
     margin: 0 10px;
 }
 
 .header-navItem:hover{
     color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 34px;
+    border-top: 2.5px solid #0065FC;
+    padding-top: 46px;
 }
 
 .header-sign-up{
     color: #0065FC;
     /* padding: 0px 60px; */
     font-weight: bold;
-    padding: 0 60px 0 30px;
-    margin-left: 30px;
+    padding: 0 30px 0 30px;
+    margin-left: 6px;
+    margin-right: 45px;
 }
 
 
@@ -128,21 +131,27 @@ img{ object-fit: cover; }
 
 
 
-
+#research {
+    margin-left: 5px;
+}
 
 #research h1 {
-    margin-bottom: 13px;
+    margin-bottom: 8px;
+}
+
+#research p {
+    font-size: 15px;
 }
 
 form {
     display: flex;
     align-items: center;
-    margin: 2rem 0 2rem 0;
+    margin: 20px 0 14px 0;
 }
 
 .marker {
     background-color: #F2F2F2;
-    padding: 1rem;
+    padding: 15.4px;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     width: 1rem;
@@ -152,7 +161,7 @@ form {
 }
 
 .text-hold{
-    padding: 1rem;
+    padding: 14.5px;
     border: 1px solid #F2F2F2;
     font-weight: bold;
     font-size: 18px;
@@ -162,14 +171,15 @@ form {
 .research-btn {
     color: white;
     background-color: #0065FC;
-    padding: 1rem;
+    padding: 15px;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     border: none;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
+    /* font-weight: bold; */
+    font-weight: 600;
     cursor: pointer;
-    width: 8.5rem;
+    width: 134px;
 }
 
 .research-btn:active {
@@ -188,7 +198,9 @@ form {
 }
 
 .filter h3 {
-    margin-right: 2.5rem;
+    font-size: 18px;
+    margin-right: 32px;
+    margin-left: 8px;
 }
 
 
@@ -217,7 +229,7 @@ form {
     font-size: 17.5px;
     font-weight: bold;
     letter-spacing: 0.3px;
-    padding-right: 1.6rem;
+    padding-right: 21px;
 
     margin-left: 0;
     margin-right: 1.5rem;
@@ -243,7 +255,7 @@ form {
     border: none;
     justify-content: center;
     align-items: center;
-    margin-right: 1rem;
+    margin-right: 12px;
     width: 50px;
     height: 50px;
 }
@@ -267,7 +279,7 @@ form {
     display: flex;
     align-items: center;
     /* margin-bottom: 1rem; */
-    margin: 1rem 0 2rem 0;
+    margin: 20px 0 40px 6px;
 }
 
 .info i {
@@ -282,7 +294,7 @@ form {
     font-size: 12px;
 }
 
-.info p {
+.info #info-p {
     font-size: 16px;
 }
 
@@ -325,6 +337,7 @@ img {
     justify-content: space-between;
 
     flex-wrap: wrap;
+    /* width: 1340px; */
     
 }
 
@@ -333,14 +346,15 @@ img {
     flex-direction: column;
     justify-content: space-between;
     /* width: 63%; */
-    width: 830px;
+    width: 832px;
     background-color: #F2F2F2;
     border-radius: 1.2rem;
-    padding: 1.5rem;    
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
 }
 
 .hebergement-titre {
     padding: 1rem;
+    margin-bottom: 11px;
 }
 
 .result-list-accommodation {
@@ -392,10 +406,10 @@ img {
 .result-popular{
     /* display: flex;
     flex-direction: column; */
-    width: 375px;
+    width: 376px;
     background-color: #F2F2F2;
     border-radius: 1.2rem;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -405,19 +419,21 @@ img {
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding: 1rem 1rem 1rem 13px;
     margin-bottom: 11px;
     /* margin: 1rem;  Bu sayede les plus populaire yazisi içerde kaldi harika oldu */
 }
 
 .result-popular-titre i {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .result-list-popular {
     display: flex;
     flex-direction: column;
     /* padding: 0 1rem 0 1rem; */
+    padding: 0 24px 0 13px;
 }
 
 .result-list-popular a {
@@ -429,7 +445,7 @@ img {
     flex-wrap: nowrap;
     width: 100%;
     height: 140px;
-    margin-bottom: 11px;
+    margin-bottom: 34px;
     margin-top: 0;
     
 
@@ -529,11 +545,12 @@ h4 {
     border: none;
     cursor: pointer;
     padding-left: 1rem;
-    margin: 1rem 0 1rem 0;
+    /* margin: 1rem 0 1rem 0; */
+    margin: 2.5rem 0 1rem 4px;
 }
 
 .afficher-plus h4 {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -671,6 +688,7 @@ footer {
     padding-right: 0;
     margin-top: 3rem;
     background-color: #F2F2F2;
+    padding-bottom: 22px;
 }
 
 .footerList {
@@ -681,15 +699,23 @@ footer {
 .footerList ul {
     width: 33%;
     /* padding: 1rem; */   /*Bunu koyunca altta slidebar geldi*/
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
+    margin-top: 14px;
 }
 
 .footerList ul li {
     list-style-type: none;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    margin-bottom: 11px;
 }
 
 .footer-title {
     font-weight: bold;
     margin-bottom: 0.5rem;
+}
+
+#footer-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 22px;
 }
