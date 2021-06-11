@@ -4,16 +4,25 @@ header + main {
 }
 
 .header-logo {
-    margin-left: 1rem;
+    margin-left: 19px;
+}
+
+.header-sign-up {
+    margin-right: 5px;
 }
 
 #research {
     padding: 1rem;
     padding-top: 0;
     margin-top: 0;
+    margin-left: 4px;
 }
 
-@media screen and (max-width: 480px) {
+form {
+    margin: 40px 5px 35px 1px;
+}
+
+@media screen and (max-width: 700px) {
 
     form{
         border: 1px solid #F2F2F2;
@@ -23,16 +32,16 @@ header + main {
     }
 
     .marker {
-        border: none;
+        /* border: none; */
+        padding: 15px;
+        width: 20px;
     }
 
     .text-hold {
         border: none;
-        margin-right: -1rem;
-        font-size: 1rem;
-        padding-left: 0;
-        padding-right: 0;
+        /* margin-right: -1rem; */
         font-size: 18px;
+        padding: 12px;
     }
 
     .research-btn {
@@ -43,14 +52,14 @@ header + main {
         display: flex;
         color: white;
         background-color: #0065FC;
-        padding: 1rem;
+        padding: 18px;
         border-radius: 1rem;
         border: none; 
         cursor: pointer;
     }
     
     .research-lens i {
-        font-size: 1.2rem;
+        font-size: 15px;
     }
 
     .research-lens:active {
@@ -65,6 +74,10 @@ header + main {
     align-items: flex-start;
     padding: 0;
     margin-bottom: 2rem;
+}
+
+.filter h3 {
+    margin-left: 2px;
 }
 
 
@@ -83,19 +96,21 @@ header + main {
     padding-left: 0;
     margin: 0;
     padding: 0;
-    padding-right: 1rem;
-    margin-right: 0.3rem;
+    padding-right: 16px;
+    margin-right: 0.7rem;
     margin-bottom: 0;
     margin-top: 0.9rem;
     margin-left: 0;
 
-    height: 42px;
+    height: 45px;
+    font-size: 16px;
+    letter-spacing: 0;
 }
 
 .filter ul li i {
-    width: 30px;
-    height: 30px;
-    padding: 0.5rem;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
     margin: 0;
     margin-right: 0.8rem;
 
@@ -103,13 +118,14 @@ header + main {
 }
 
 .info {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     align-items: baseline;
+    margin: 20px 0 40px 1px;
 }
 
 .info i {
     width: 27px;
-    margin-right: 0.7rem;
+    margin-right: 0.8rem;
     font-size: 13px;
 }
 
@@ -117,6 +133,7 @@ header + main {
     font-size: 1rem;
 }
 
+/* -------------------- ACCOMMODATION ------------------ */
 
 #accommodation {
     display: flex;
@@ -126,29 +143,55 @@ header + main {
     width: 100%;
 }
 
-.img-heberge {
-    width: 98.2%;
-}
-
-
 .result-popular {
     width: 100%;
-    padding: 0;
-    /* padding: 1rem; */
     border-radius: 0;
-    padding-top: 1rem;
+    padding: 20px 0 24px 0;
 }
 
 .result-popular-titre{
-    padding: 1rem;
-    margin-top: 5px;
+    padding: 20px;
 }
+
+.result-list-popular{
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 0 30px 0; */
+    padding: 0rem;
+    padding: 0 20px 0 20px;
+}
+/* res-pop etkisiz kaldi, .result-list-popular a çalisiyor onun yeerine */
+.res-pop {
+    margin: 0;
+    /* padding: 0 1rem 0 1rem; */
+    margin-bottom: 12px;
+    border: none;
+}
+
+.result-list-popular a {
+    margin-bottom: 12px;
+}
+
+.img-pop {
+    margin: 5px;
+}
+
+.description-pop {
+    /* margin: 0.6rem 0.4rem 0.7rem 0.8rem; */
+    margin: 15px 10px 10px 15px;
+}
+
+.description-pop p {
+    margin-top: 8px;
+}
+
+/* Populer bitti, hebergement basliyor burdan sonra */
 
 .result-accommodation {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0;
+    padding: 20px 0 24px 0;
     /* padding: 1rem; */
     border-radius: 0;
     background-color: white;
@@ -158,50 +201,38 @@ header + main {
     width: 100%;
 }
 
-.hebergement-titre {
-    padding: 1.3rem 1rem 0.3rem 1rem;
+.img-heberge {
+    width: 98.2%;
+    /* border: none;
+    margin: 0; */
 }
 
+.hebergement-titre {
+    padding: 20px;
+}
 
+.result-list-accommodation{
+    padding: 0 20px 0 20px;
+}
+
+.result-list-accommodation a {
+    margin-bottom: 12px;
+}
 
 .afficher-plus {
     background-color: white;
     margin: 0;
     /* padding: 1rem 1rem 1rem 0; */
     padding: 0;
-    margin: 2rem 0 1.9rem 0;
+    margin: 1.5rem 0 2rem 4px;
     font-size: 40px;
 }
 
-.result-list-popular{
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 30px 0;
-}
-
-.result-list-accommodation{
-    padding: 0;
-}
-
-.result-list-accommodation a {
-    margin-bottom: 0px;
-    margin-top: 13px;
-}
-
-.description-pop {
-    /* margin: 0.6rem 0.4rem 0.7rem 0.8rem; */
-    margin: 15px 10px 10px 16px;
-
-}
-
-.description-pop p {
-    margin-top: 8px;
-}
-
-
+/* -------- ACTIVITY ------------ */
 
 #activity {
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding: 0 20px 0 21px;
     margin-top: 0.5rem;
 }
 
@@ -228,16 +259,23 @@ header + main {
     margin-bottom: 26px;
 }
 
+/* ------------ FOOTER ------------------ */
 
 footer{
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 .footerList {
     display: flex;
     flex-direction: column;
-    padding: 2rem 0 0 1rem;
-    margin-left: 0.3rem;
+    /* padding: 2rem 0 0 1rem;
+    margin-left: 0.3rem; */
+    margin: 0;
+    padding: 0;
+    padding: 12px 0 15px 22px;
 }
 
 .footerList ul {
