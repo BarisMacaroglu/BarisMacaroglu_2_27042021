@@ -2,18 +2,6 @@
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    /* max-width: 1440px; */
-}
-
-/* html, body {
-    box-sizing: border-box;
-} */
-
-body {
-    max-width: 1460px;
-    width: 100%;
-    margin: auto;  /*Comme ça, affichage sur ultra-large écran OK*/
-    box-sizing: border-box;
 }
 
 h1{ font-size: 22px; font-weight: bold; margin-bottom: 10px; }
@@ -28,10 +16,17 @@ a{ font-size: 16px; color: black; text-decoration: none; }
 a:hover{ color: #0065FC; }
 a:focus { color: #000000; }
 
-
-main {
-    margin-left: 3rem;
-    margin-right: 3rem;
+header, main {
+    max-width: 1440px;
+    /* width: 100%; */
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 
 
@@ -49,21 +44,18 @@ img{ object-fit: cover; }
 /** --------------- HEADER --------------- **/
 
 .header{
-    /* max-width: 1440px; */
-    width: 100%;
+    max-width: 1440px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     align-content: flex-end;
-    /* height: 93px; */
-    /* margin: auto; */
     margin-bottom: 33px;
     margin-top: 48px;
 }
 
 .header-logo{
     margin-right: auto;
-    margin-left: 50px;
+    margin-left: 5px;
     margin-top: -4px;
 }
 
@@ -86,11 +78,10 @@ img{ object-fit: cover; }
 
 .header-sign-up{
     color: #0065FC;
-    /* padding: 0px 60px; */
     font-weight: bold;
     padding: 0 30px 0 30px;
     margin-left: 6px;
-    margin-right: 45px;
+    margin-right: 0px;
 }
 
 
@@ -224,13 +215,6 @@ form {
     border-left: none;
     height: 47px;
 
-    /* border-width: 2px 2px 2px 0;
-    border-style: solid;
-    border-color: #D1D1D1;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    padding: 0; */
-
     margin: 1rem;
     font-size: 17.5px;
     font-weight: bold;
@@ -249,9 +233,9 @@ form {
     cursor: pointer;
 }
 
-.filter ul li:active {
+/* .filter ul li:active {
     transform: translateY(3px);
-}
+} */
 
 .filter ul li i {
     display: flex;
@@ -306,13 +290,6 @@ form {
 
 /* HEBERGEMENT */
 
-/* img {
-    width: 100px;
-    height: 50px;
-    padding: 0.5rem;
-    object-fit: contain;
-} */
-
 img {
     max-width: 100%;
     height: auto;
@@ -322,19 +299,16 @@ img {
     width: 236px;
     height: 115px;
     margin: 3px;
-    /* padding: 5rem; */
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 
 .img-pop {
     width: 127px;
-    /* height: 100px; */
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     margin: 0.2rem;
     float: left;
-    /* object-fit: cover; */
 }
 
 
@@ -376,28 +350,15 @@ img {
 
 }
 
-/* .result-list-accommodation a {
-    margin: 1rem 2rem 1rem 2rem;
-} */
-
 .thumbnail {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    /* justify-items: center; */
-    /* align-items: center; */
-    /* text-align: left; */
-    /* padding: 1rem; */
-    /* margin-top: 1rem;
-    margin-bottom: 1rem; */
-    /* margin: 1rem; */
     border: 2px solid white;
     background-color: white;
     border-radius: 19px;
     font-size: 12px;
-
-    /* margin: 1rem 0 1rem 1rem; */
     margin: 0;
     width: 243px;
 
@@ -411,8 +372,6 @@ img {
 }
 
 .result-popular{
-    /* display: flex;
-    flex-direction: column; */
     width: 372px;
     background-color: #F2F2F2;
     border-radius: 1.2rem;
@@ -427,10 +386,8 @@ img {
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
-    /* padding: 1rem; */
     padding: 1rem 1rem 1rem 13px;
     margin-bottom: 11px;
-    /* margin: 1rem;  Bu sayede les plus populaire yazisi içerde kaldi harika oldu */
 }
 
 .result-popular-titre i {
@@ -440,7 +397,6 @@ img {
 .result-list-popular {
     display: flex;
     flex-direction: column;
-    /* padding: 0 1rem 0 1rem; */
     padding: 0 20px 0 13px;
 }
 
@@ -455,9 +411,6 @@ img {
     height: 140px;
     margin-bottom: 34px;
     margin-top: 0;
-    
-
-    /* margin: 1rem 2rem 1rem 2rem; */
 
     border-radius: 21px;
 }
@@ -470,13 +423,12 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* float: right; */
 
-    margin: 0.75rem 3.5rem 0.75rem 17px;
+    margin: 0.75rem 1.5rem 0.75rem 17px;
 }
 
 .description-pop h4 {
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 6px;
 }
 
@@ -503,9 +455,6 @@ h4 {
     font-size: 18px;
 }
 
-/* .descr-pop {
-    margin-top: 0.5rem;
-} */
 
 .description-heb {
     display: flex;
@@ -550,7 +499,6 @@ h4 {
     border: none;
     cursor: pointer;
     padding-left: 1rem;
-    /* margin: 1rem 0 1rem 0; */
     margin: 2.5rem 0 12px 4px;
 }
 
@@ -560,7 +508,7 @@ h4 {
 
 
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1420px){
     #accommodation {
         flex-direction: column-reverse;
         margin: 0;
@@ -573,7 +521,6 @@ h4 {
     }
 
     .result-popular-titre{
-        /* padding: 2rem 2rem 0 2rem; */
         padding: 2rem 2rem 1rem 2rem;
     }
 
@@ -605,15 +552,7 @@ h4 {
         margin-top: 1rem;
         background-color: #F2F2F2;
         justify-content: center;
-        /* align-items: center; */
-
-        /* align-self: center; */
-        /* align-content: center; */
-        /* justify-self: center; */
-        /* justify-items: center; */
-
         padding: 0;
-        /* margin: 0; */
     }
 
     .hebergement-titre {
@@ -623,10 +562,20 @@ h4 {
     .result-list-accommodation{
         display: flex;
         padding: 1rem;
+        box-sizing: border-box;
+        height: 500px;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .result-list-accommodation a {
+        box-sizing: border-box;
+        /* margin: 1rem 2rem 1rem 2rem; */
+        width: 30%;
+        height: 200px;
     }
 
     .thumbnail{
-
+        flex-wrap: nowrap;
     }
 
     .res-heb {
@@ -634,7 +583,9 @@ h4 {
     }
 
     .img-heberge {
-
+        width: auto;
+        height: 115px;
+        margin: 3px;
     }
 
     .description-heb {
@@ -730,30 +681,33 @@ h4 {
 
 
 footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
     padding-left: 0;
     padding-right: 0;
     margin-top: 60px;
     background-color: #F2F2F2;
-    padding-bottom: 22px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
 }
 
 .footerList {
     display: flex;
-    /* padding: 2rem 0 2rem 2.5rem; */
     /* padding: 32px 0 32px 48px; */
     padding: 30px 0 16px 50px;
+    width: 100%;
+    max-width: 1440px;
+    justify-content: flex-start;
 }
 
 .footerList ul {
     width: 32.5%;
-    /* padding: 1rem; */   /*Bunu koyunca altta slidebar geldi*/
-    /* padding-bottom: 1rem; */
     margin-top: 14px;
 }
 
 .footerList ul li {
     list-style-type: none;
-    /* padding: 0.5rem; */
     margin-bottom: 11px;
 }
 

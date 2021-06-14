@@ -3,6 +3,11 @@ header + main {
     margin-right: 0;
 }
 
+header, main {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .header-logo {
     margin-left: 19px;
 }
@@ -213,6 +218,8 @@ form {
 
 .result-list-accommodation{
     padding: 0 20px 0 20px;
+    margin: 0;
+    height: auto;
 }
 
 .result-list-accommodation a {
@@ -234,6 +241,8 @@ form {
     /* padding: 1rem; */
     padding: 0 20px 0 21px;
     margin-top: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .activity-titre {

@@ -9,28 +9,21 @@
     <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="images/logo/Reservia@3x-reduit.png">
-    <!--Fonts Google'dan aldigim Raleway yazi tipi: regular ve Bold-->
+    <!-- La police Raleway (regular et bold) de Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
-    <!-- cdnjs'ten aldigim font-awesome css linki, ikon vs gelmesini sagliyor-->
+    <!-- Le lien css de cdnjs pour les icons de font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Responsive Design iPhone8 için 375px, daha iyi analiz için geçici olarak 600'de-->
+    <!-- Responsive Design -->
     <link rel="stylesheet" media="(max-width:700px)" href="css/mobile.css">
 </head>
 <body>
-    <!-- <header>
-        <a href="index.html" id="logo"><img src="images/logo/reservia-logo.svg" alt="Logo Reservia"></a>
-        <nav id="navbar">
-            <div class="navbar-link selected"><a href="#accommodation" class="navbar-link selected">Hébergements</a></div>
-            <div class="navbar-link"><a href="#activity" class="navbar-link">Activités</a></div>
-        </nav>
-        <div class="sign-up"><a href="#" class="sign-up">S'inscrire</a></div>
-    </header> -->
     <header class="header">
-        <!-- <img class="header-logo" src="images/logo/reservia-logo.svg" alt="logo Reservia"> -->
         <a href="index.html" class="header-logo"><img src="images/logo/reservia-logo.svg" alt="logo Reservia"></a>
         <nav class="header-nav">
             <a class="header-navItem" href="#accommodation">Hébergements</a>
+            <!-- Si nécessaire, ajouter la classe 'selected' -->
+            <!-- Si necessaire, naviguer vers la partie de 'hébergement' et pas 'popular', via #hebergement  -->
             <a class="header-navItem" href="#activity">Activités</a>
         </nav>
         <a class="header-sign-up" href="#">S'inscrire</a>
@@ -84,7 +77,7 @@
         </section>
 
         <section id="accommodation">
-            <article class="result-accommodation">
+            <article id="hebergement" class="result-accommodation">
                 <div class="hebergement-titre"><h2>Hébergements à Marseille</h2></div>
                 <div class="result-list-accommodation">
                     <a href="" class="thumbnail res-heb">
@@ -186,7 +179,7 @@
                 </div>
                 <div class="afficher-plus"><h4>Afficher plus</h4></div>
             </article>
-            <aside class="result-popular">
+            <aside id="popular" class="result-popular">
                 <div class="result-popular-titre">
                     <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>
