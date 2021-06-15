@@ -335,4 +335,20 @@ footer{
         margin: 0;
         padding: 0;
     }
+
+    .result-list-popular {
+        padding: 0;
+    }
+
+    .result-list-accommodation {
+        padding: 0;
+    }
+
+    #activity {
+        padding: 0;
+    }
+
+    .footerList {
+        padding: 0;
+    }
 }
