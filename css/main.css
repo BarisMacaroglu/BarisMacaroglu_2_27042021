@@ -526,13 +526,15 @@ h4 {
     .result-list-popular{
         display: flex;
         flex-direction: row;
-        padding: 0;
+        padding: 0 2rem;
+        justify-content: space-between;
     }
 
-    /* .result-list-popular a {
+    .result-list-popular a {
         height: auto;
         max-height: 170px;
-    } */
+        width: 30%;
+    }
 
     @media screen and (max-width: 900px) {
         /* .result-list-popular {
@@ -541,19 +543,19 @@ h4 {
 
 
         .result-list-popular a {
-            height: auto;
+            /* height: auto; */
             max-height: 170px;
         }
     }
 
     .res-pop {
-        margin: 2rem;
+        /* margin: 2rem; */
         
     }
 
     .img-pop{
         width: 100%;
-        max-width: 127px;
+        max-width: 42%;
     }
 
     .description-pop {

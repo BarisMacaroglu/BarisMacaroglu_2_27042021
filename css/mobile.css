@@ -178,10 +178,13 @@ form {
 .result-list-popular a {
     margin-bottom: 12px;
     height: 140px;
+    width: 100%;
 }
 
 .img-pop {
     margin: 5px;
+    max-width: 33%;
+    min-width: 127px;
 }
 
 .description-pop {
